@@ -1,0 +1,10 @@
+{
+  "name": "tt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "cd build && git init && git commit --allow-empty -m 'Update' && git checkout -b gh-pages && git add . && git commit -am 'Update' && git push git@github.com:thonatos/antpress-egg.git gh-pages --force"
+  },
+  "dependencies": {}
+}

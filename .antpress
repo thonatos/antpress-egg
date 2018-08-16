@@ -1,0 +1,15 @@
+{
+  "site": {
+    "title": "Egg.js",
+    "subtitle": "Born to build better enterprise frameworks and apps",
+    "description": "Born to build better enterprise frameworks and apps"
+  },
+  "logo": "/logo.svg",  
+  "docs": "source/docs",
+  "build": "build/",
+  "data": {
+    "data": "source/_data/",    
+    "messages.en": "source/locales/en.yml",
+    "messages.zh": "source/locales/zh-cn.yml"
+  }  
+} 
