@@ -1,0 +1,376 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.png"><style class="_styletron_hydrate_"></style><title>Multi-Process Development Model Enhancement</title><meta name="description" content="Born to build better enterprise frameworks and apps"><link href="/static/css/post.d62265dc.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="ant-layout" data-reactroot=""><div class="header-module__header___3ADJ9 ant-layout-header"><div class="ant-row-flex"><div class="ant-col-xs-12 ant-col-md-20 ant-col-lg-2"><div class="header-module__logo___3yTXp"><a href="/"><img src="/logo.svg" alt="logo"/></a></div></div><div class="ant-col-xs-0 ant-col-md-0 ant-col-lg-20"><ul class="ant-menu header-module__menu___3yEtW ant-menu-light ant-menu-root ant-menu-horizontal" role="menu"><li class="ant-menu-item" role="menuitem"><a href="/en/intro/">Guide</a></li><li class="ant-menu-item" role="menuitem"><a href="/api/">API</a></li><li class="ant-menu-item" role="menuitem"><a href="/en/tutorials/index.html">Tutorials</a></li><li class="ant-menu-item" role="menuitem"><a href="https://github.com/search?q=topic%3Aegg-plugin&amp;type=Repositories">Plugins</a></li><li class="ant-menu-item" role="menuitem"><a href="https://github.com/eggjs/egg/releases">Release</a></li></ul></div><div style="text-align:right" class="ant-col-xs-12 ant-col-md-4 ant-col-lg-2"><button type="button" class="ant-btn"><span>切换语言</span></button></div></div></div><div class="ant-layout-content"><div class="basic_layout-module__content___3flpY ant-layout"><div class="sider-module__side___1Cadj ant-layout-sider ant-layout-sider-light" style="flex:0 0 200px;max-width:200px;min-width:200px;width:200px"><div class="ant-layout-sider-children"><ul class="ant-menu sider-module__menu___2GqPr ant-menu-light ant-menu-root ant-menu-inline" role="menu"><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open" role="menuitem"><div style="padding-left:24px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="0$Menu" aria-haspopup="true"><span>Guide</span><i class="ant-menu-submenu-arrow"></i></div><ul id="0$Menu" class="ant-menu  ant-menu-sub ant-menu-inline" role="menu"><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/intro/index.html">What is Egg?</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/intro/egg-and-koa.html">Egg and Koa</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/intro/quickstart.html">Quick Start</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/tutorials/progressive.html">Progressive</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/migration.html">Migration to 2.x</a></li></ul></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open" role="menuitem"><div style="padding-left:24px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="1$Menu" aria-haspopup="true"><span>Basis Function</span><i class="ant-menu-submenu-arrow"></i></div><ul id="1$Menu" class="ant-menu  ant-menu-sub ant-menu-inline" role="menu"><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/structure.html">Directory Structure</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/objects.html">Built-in Objects</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/env.html">Environment</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/config.html">Configuration</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/middleware.html">Middleware</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/router.html">Router</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/controller.html">Controller</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/service.html">Service</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/plugin.html">Plugin</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/schedule.html">Schedule</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/extend.html">Extend</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/basics/app-start.html">Custom Init</a></li></ul></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open" role="menuitem"><div style="padding-left:24px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="2$Menu" aria-haspopup="true"><span>Core</span><i class="ant-menu-submenu-arrow"></i></div><ul id="2$Menu" class="ant-menu  ant-menu-sub ant-menu-inline" role="menu"><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/development.html">Development</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/unittest.html">Unit Testing</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/deployment.html">Deployment</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/logger.html">Logger</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/httpclient.html">HttpClient</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/cookie-and-session.html">Cookie and Session</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/cluster-and-ipc.html">Cluster and IPC</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/view.html">View</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/error-handling.html">Error Handling</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/security.html">Security</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/core/i18n.html">i18n</a></li></ul></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open" role="menuitem"><div style="padding-left:24px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="3$Menu" aria-haspopup="true"><span>Tutorials</span><i class="ant-menu-submenu-arrow"></i></div><ul id="3$Menu" class="ant-menu  ant-menu-sub ant-menu-inline" role="menu"><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/tutorials/mysql.html">MySQL</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/tutorials/restful.html">RESTful API</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/tutorials/passport.html">Passport</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/tutorials/socketio.html">Socket.IO</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/tutorials/assets.html">Assets</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/tutorials/typescript.html">TypeScript</a></li></ul></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open" role="menuitem"><div style="padding-left:24px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="4$Menu" aria-haspopup="true"><span>Advanced</span><i class="ant-menu-submenu-arrow"></i></div><ul id="4$Menu" class="ant-menu  ant-menu-sub ant-menu-inline" role="menu"><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/advanced/loader.html">Loader</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/advanced/plugin.html">Plugin Development</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/advanced/framework.html">Framework</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/advanced/cluster-client.html">Cluster Enhancement</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/advanced/view-plugin.html">View Plugin</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/style-guide.html">Style Guide</a></li></ul></li><li class="ant-menu-submenu ant-menu-submenu-inline ant-menu-submenu-open" role="menuitem"><div style="padding-left:24px" class="ant-menu-submenu-title" aria-expanded="true" aria-owns="5$Menu" aria-haspopup="true"><span>Community</span><i class="ant-menu-submenu-arrow"></i></div><ul id="5$Menu" class="ant-menu  ant-menu-sub ant-menu-inline" role="menu"><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/plugins/">Plugin List</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/contributing.html">Contributing</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/resource.html">Resource</a></li><li class="ant-menu-item" role="menuitem" style="padding-left:48px"><a href="/en/faq.html">FAQ</a></li></ul></li></ul></div></div><div class="basic_layout-module__post___2Z7KK ant-layout-content"><div class="ant-row" style="margin-left:-8px;margin-right:-8px"><div style="padding-left:8px;padding-right:8px" class="ant-col-xs-24 ant-col-md-18"><div class="markdown-body" style="font-size:14px"><div><p>In the previous <a href="../core/cluster-and-ipc.md">Multi-Process Model chapter</a>, we covered the multi-process model of the framework in detail, whose Agent process suits for a common class of scenarios: some middleware clients need to establish a persistent connection with server. In theory, a server had better establish only one persistent connection. However, the multi-process model will result in n times (n = number of Worker processes) connections being created.</p><pre><code class="language-bash">+--------+   +--------+
+| Client |   | Client |   ... n
++--------+   +--------+
+    |  \     /   |
+    |    \ /     |        n * m links
+    |    / \     |
+    |  /     \   |
++--------+   +--------+
+| Server |   | Server |   ... m
++--------+   +--------+</code></pre><p>In order to reuse persistent connections as much as possible (because they are very valuable resources for server), we put it into the Agent process to maintain, and then we transmit data to each Worker via messenger. It&#x27;s feasible but often we need to write a lot of code to encapsulate the interface and to realize data transmission, which is very troublesome.</p><p>In addition, it&#x27;s relatively inefficient to transmit data via messenger, since messenger will do the transmission through the Master; In case IPC channel goes wrong, it would probably break Master process down.</p><p>Then is there any better way? The answer is yes. We provide a new type of model to reduce the complexity of this type of client encapsulation. The new Model bypasses the Master by establishing a direct socket between Agent and Worker. And as an external interface, Agent maintains shared connection among multiple Worker processes.</p><h2 id="core-idea">core idea</h2><ul><li>Inspired by the <a href="http://www.cs.wustl.edu/~schmidt/PDF/lf.pdf">Leader/Follower</a> model</li><li>The client is divided into two roles:
+  - Leader: responsible for maintaining the connection with the remote server, only one Leader for the same type of client.
+  - Follower: delegates specific operations to the Leader. A common way is Subscribe-Model (let the Leader interact with remote server and wait for its return).</li><li>How to determine who Leader is, who Follower is? There are two modes:
+  - Free competition mode: clients determine the Leader by the competition of the local port when start up. For example: every one tries to monitor port 7777, and finally the only one instance who seizes it will become Leader, the rest will be Followers.
+  - Mandatory mode: the framework designates a Leader and the rest are Followers.</li><li>we use mandatory mode inside the framework. The Leader can only be created inside the Agent, which is also in line with our positioning of the Agent.</li><li>When the framework starts up, Master will randomly select an available port as the communication port monitored by the Cluster Client, and passes it by parameter to Agent and App Worker.</li><li>Leader communicates with Follower through direct socket connection (through communication port), no longer needs Master to transit.</li></ul><p>Under the new mode, the client&#x27;s communication is as follows:</p><pre><code class="language-js">             +-------+
+             | start |
+             +---+---+
+                 |
+        +--------+---------+
+      __| port competition |__
+win /   +------------------+  \ lose
+   /                           \
++---------------+     tcp conn     +-------------------+
+| Leader(Agent) |&lt;----------------&gt;| Follower(Worker1) |
++---------------+                  +-------------------+
+    |            \ tcp conn
+    |             \
++--------+         +-------------------+
+| Client |         | Follower(Worker2) |
++--------+         +-------------------+</code></pre><h2 id="client-interface-type-abstraction">Client interface type abstraction</h2><p>We abstract the client interface into the following two broad categories, which is also a specification of the client interface. For clients that are in line with norms, we can automatically wrap it as Leader / Follower mode.</p><ul><li>Subscribe / Publish Mode
+  - The <code>subscribe(info, listener)</code> interface contains two parameters. The first one is the information subscribed and the second one is callback function for subscribe.
+  - The <code>publish(info)</code> interface contains a parameter which is the information subscribed.</li><li>Invoke Mode, supports three styles of interface: callback, promise and generator function, but generator function is recommended.</li></ul><p>Client example</p><pre><code class="language-js">const Base = require(&#x27;sdk-base&#x27;);
+
+class Client extends Base {
+  constructor(options) {
+    super(options);
+    // remember to invoke ready after initialization is successful
+    this.ready(true);
+  }
+
+  /**
+   * Subscribe
+   *
+   * @param {Object} info - subscription information (a JSON object, try not to include attributes such as Function, Buffer, Date)
+   * @param {Function} listener - monitoring callback function, receives a parameter as the result of monitoring
+   */
+  subscribe(info, listener) {
+    // ...
+  }
+
+  /**
+   * Publish
+   *
+   * @param {Object} info - publishing information, which is similar to that of subscribe described above
+   */
+  publish(info) {
+    // ...
+  }
+
+  /**
+   * Get data (invoke)
+   *
+   * @param {String} id - id
+   * @return {Object} result
+   */
+  async getData(id) {
+    // ...
+  }
+}</code></pre><h2 id="exception-handling">exception handling</h2><ul><li>If Leader &quot;dies&quot;, a new round of port contention will be triggered. The instance which seizes the port will be elected as the new Leader.</li><li>To ensure that the channel between Leader and Follower is healthy, heartbeat mechanism needs to be introduced. If the Follower does not send a heartbeat packet within a fixed time, the Leader will proactively disconnect from the Follower, which will trigger the reinitialization of Follower.</li></ul><h2 id="protocol-and-time-series-to-invoke">protocol and time series to invoke</h2><p>Leader and Follower exchange data via the following protocols:</p><pre><code class="language-js"> 0       1       2               4                                                              12
+ +-------+-------+---------------+---------------------------------------------------------------+
+ |version|req/res|    reserved   |                          request id                           |
+ +-------------------------------+-------------------------------+-------------------------------+
+ |           timeout             |   connection object length    |   application object length   |
+ +-------------------------------+---------------------------------------------------------------+
+ |         conn object (JSON format)  ...                    |            app object             |
+ +-----------------------------------------------------------+                                   |
+ |                                          ...                                                  |
+ +-----------------------------------------------------------------------------------------------+</code></pre><ol><li>On the communication port Leader starts a Local Server, via which all Leaders / Followers communicate.</li><li>After Follower connects Local Server, it will firstly send a register channel packet (introduction of the channel concept is to distinguish between different types of clients)</li><li>Local Server will assign Follower to a specified Leader (match based on client type).</li><li>Follower sends requests to Leader to subscribe and publish.</li><li>Leader notifies Follower through the subscribe result packet when the subscription data changes.</li><li>Follower sends a call request to the Leader. The Leader executes a corresponding operation after receiving, and returns the result.</li></ol><pre><code class="language-js"> +----------+             +---------------+          +---------+
+ | Follower |             |  Local Server |          |  Leader |
+ +----------+             +---------------+          +---------+
+      |     register channel     |       assign to        |
+      + -----------------------&gt; |  --------------------&gt; |
+      |                          |                        |
+      |                                subscribe          |
+      + ------------------------------------------------&gt; |
+      |                                 publish           |
+      + ------------------------------------------------&gt; |
+      |                                                   |
+      |       subscribe result                            |
+      | &lt;------------------------------------------------ +
+      |                                                   |
+      |                                 invoke            |
+      + ------------------------------------------------&gt; |
+      |          invoke result                            |
+      | &lt;------------------------------------------------ +
+      |                                                   |</code></pre><h2 id="specific-use">specific use</h2><p>In the following I will use a simple example to introduce how to make a client support Leader / Follower mode in the framework.</p><ul><li>The first step, our client is best to meet the interface conventions mentioned above, for example:</li></ul><pre><code class="language-js">// registry_client.js
+const URL = require(&#x27;url&#x27;);
+const Base = require(&#x27;sdk-base&#x27;);
+
+class RegistryClient extends Base {
+  constructor(options) {
+    super({
+      // Specify a method for asynchronous start 
+      initMethod: &#x27;init&#x27;,
+    });
+    this._options = options;
+    this._registered = new Map();
+  }
+
+  /**
+   * Start logic
+   */
+  async init() {
+    this.ready(true);
+  }
+
+  /**
+   * Get configuration
+   * @param {String} dataId - the dataId
+   * @return {Object} configuration
+   */
+  async getConfig(dataId) {
+    return this._registered.get(dataId);
+  }
+
+  /**
+   * Subscribe
+   * @param {Object} reg
+   *   - {String} dataId - the dataId
+   * @param {Function} listener - the listener
+   */
+  subscribe(reg, listener) {
+    const key = reg.dataId;
+    this.on(key, listener);
+
+    const data = this._registered.get(key);
+    if (data) {
+      process.nextTick(() =&gt; listener(data));
+    }
+  }
+
+  /**
+   * publish
+   * @param {Object} reg
+   *   - {String} dataId - the dataId
+   *   - {String} publishData - the publish data
+   */
+  publish(reg) {
+    const key = reg.dataId;
+    let changed = false;
+
+    if (this._registered.has(key)) {
+      const arr = this._registered.get(key);
+      if (arr.indexOf(reg.publishData) === -1) {
+        changed = true;
+        arr.push(reg.publishData);
+      }
+    } else {
+      changed = true;
+      this._registered.set(key, [reg.publishData]);
+    }
+    if (changed) {
+      this.emit(key, this._registered.get(key).map(url =&gt; URL.parse (url, true)));
+    }
+  }
+}
+
+module.exports = RegistryClient;</code></pre><ul><li>The second step is to encapsulate the RegistryClient using the <code>agent.cluster</code> interface.</li></ul><pre><code class="language-js">// agent.js
+const RegistryClient = require(&#x27;registry_client&#x27;);
+
+module.exports = agent =&gt; {
+  // encapsulate and instantiate RegistryClient
+  agent.registryClient = agent.cluster(RegistryClient)
+    // parameter of create method is the parameter of RegistryClient constructor
+    .create({});
+
+  agent.beforeStart(async () =&gt; {
+    await agent.registryClient.ready();
+    agent.coreLogger.info(&#x27;registry client is ready&#x27;);
+  });
+};</code></pre><ul><li>The third step, use the <code>app.cluster</code> interface to encapsulate RegistryClient</li></ul><pre><code class="language-js">// app.js
+const RegistryClient = require(&#x27;registry_client&#x27;);
+
+module.exports = app =&gt; {
+  app.registryClient = app.cluster(RegistryClient).create({});
+  app.beforeStart(async () =&gt; {
+    await app.registryClient.ready();
+    app.coreLogger.info(&#x27;registry client is ready&#x27;);
+
+    // invoke subscribe to subscribe
+    app.registryClient.subscribe({
+      dataId: &#x27;demo.DemoService&#x27;,
+    }, val =&gt; {
+      // ...
+    });
+
+    // invoke publish to publsih data
+    app.registryClient.publish({
+      dataId: &#x27;demo.DemoService&#x27;,
+      publishData: &#x27;xxx&#x27;,
+    });
+
+    // invoke getConfig interface
+    const res = await app.registryClient.getConfig(&#x27;demo.DemoService&#x27;);
+    console.log(res);
+  });
+};</code></pre><p>Is not it simple?</p><p>Of course, if your client is not so 『standard』, then you may need to use some other APIs, for example, your subscription function is not called subscribe, but sub.</p><pre><code class="language-js">class MockClient extends Base {
+  constructor(options) {
+    super({
+      initMethod: &#x27;init&#x27;,
+    });
+    this._options = options;
+    this._registered = new Map();
+  }
+
+  async init() {
+    this.ready(true);
+  }
+
+  sub(info, listener) {
+    const key = reg.dataId;
+    this.on(key, listener);
+
+    const data = this._registered.get(key);
+    if (data) {
+      process.nextTick(() =&gt; listener(data));
+    }
+  }
+
+  ...
+}</code></pre><p>You need to set it manually with the delegate API</p><pre><code class="language-js">// agent.js
+module.exports = agent =&gt; {
+  agent.mockClient = agent.cluster(MockClient)
+    // delegate sub to logic of subscribe
+    .delegate(&#x27;sub&#x27;, &#x27;subscribe&#x27;)
+    .create();
+
+  agent.beforeStart(async () =&gt; {
+    await agent.mockClient.ready();
+  });
+};</code></pre><pre><code class="language-js">// app.js
+module.exports = app =&gt; {
+  app.mockClient = app.cluster(MockClient)
+    // delegate sub to subscribe logic
+    .delegate(&#x27;sub&#x27;, &#x27;subscribe&#x27;)
+    .create();
+
+  app.beforeStart(async () =&gt; {
+    await app.mockClient.ready();
+
+    app.sub({ id: &#x27;test-id&#x27; }, val =&gt; {
+      // put your code here
+    });
+  });
+};</code></pre><p>We&#x27;ve already known that using cluster-client allows us to develop a 『pure』 RegistryClient without understanding the multi-process model. We can only focus on interacting with server, and use the cluster-client with a simple wrap to get a ClusterClient which supports multi-process model. The RegistryClient here is actually a DataClient that is specifically responsible for data communication with remote service.</p><p>You may have noticed that the ClusterClient brings with several constraints at the same time. If you want to expose the same approach to each process, RegistryClient can only support sub/pub mode and asynchronous API calls. Because all interactions in multi-process model must use socket communications, under which it is bound to bring this constraint.</p><p>Suppose we want to realize a synchronous get method. Put subscribed data directly into memory and use the get method to return data directly. How to achieve it? The real situation may be more complicated.</p><p>Here, we introduce an APIClient best practice. For modules that have requirements of synchronous API such as reading cached data, an APIClient is encapsulated base on RegistryClient to implement these APIs that are not related to interaction with the remote server. The APIClient instance is exposed to the user.</p><p>In APIClient internal implementation:</p><ul><li>To obtain data asynchronously, invoke RegistryClient&#x27;s API base on ClusterClient.</li><li>Interfaces that are unrelated to server, such as synchronous call, are to be implemented in APIClient. Since ClusterClient&#x27;s APIs have flushed multi-process differences, there is no need to concern about multi-process model when calls to RegistryClient during developing APIClient.</li></ul><p>For example, add a synchronous get method with buffer in the APIClient module:</p><pre><code class="language-js">// some-client/index.js
+const cluster = require(&#x27;cluster-client&#x27;);
+const RegistryClient = require(&#x27;./registry_client&#x27;);
+
+class APIClient extends Base {
+  constructor(options) {
+    super(options);
+
+    // options.cluster is used to pass app.cluster to Egg&#x27;s plugin
+    this._client = (options.cluster || cluster)(RegistryClient).create(options);
+    this._client.ready(() =&gt; this.ready(true));
+
+    this._cache = {};
+
+    // subMap:
+    // {
+    //   foo: reg1,
+    //   bar: reg2,
+    // }
+    const subMap = options.subMap;
+
+    for (const key in subMap) {
+      this.subscribe(subMap[key], value =&gt; {
+        this._cache[key] = value;
+      });
+    }
+  }
+
+  subscribe(reg, listener) {
+    this._client.subscribe(reg, listener);
+  }
+
+  publish(reg) {
+    this._client.publish(reg);
+  }
+
+  get(key) {
+    return this._cache[key];
+  }
+}
+
+// at last the module exposes this APIClient
+module.exports = APIClient;</code></pre><p>Then we can use this module like this:</p><pre><code class="language-js">// app.js || agent.js
+const APIClient = require(&#x27;some-client&#x27;); // the module above
+module.exports = app =&gt; {
+  const config = app.config.apiClient;
+  app.apiClient = new APIClient(Object.assign({}, config, { cluster: app.cluster });
+  app.beforeStart(async () =&gt; {
+    await app.apiClient.ready();
+  });
+};
+
+// config.${env}.js
+exports.apiClient = {
+  subMap: {
+    foo: {
+      id: &#x27;&#x27;,
+    },
+    // bar...
+  }
+};</code></pre><p>To make it easy for you to encapsulate <code>APIClient</code>, we provide an<code>APIClientBase</code> base class in the <a href="https://www.npmjs.com/package/cluster-client">cluster-client</a> module. Then <code>APIClient</code> above can be rewritten as:</p><pre><code class="language-js">const APIClientBase = require(&#x27;cluster-client&#x27;).APIClientBase;
+const RegistryClient = require(&#x27;./registry_client&#x27;);
+
+class APIClient extends APIClientBase {
+  // return the original client class
+  get DataClient() {
+    return RegistryClient;
+  }
+
+  // used to set the cluster-client related parameters, equivalent to the second parameter of the cluster method
+  get clusterOptions() {
+    return {
+      responseTimeout: 120 * 1000,
+    };
+  }
+
+  subscribe(reg, listener) {
+    this._client.subscribe(reg, listener);
+  }
+
+  publish(reg) {
+    this._client.publish(reg);
+  }
+
+  get(key) {
+    return this._cache[key];
+  }
+}</code></pre><p>in conclusion:</p><pre><code class="language-bash">+------------------------------------------------+
+| APIClient                                      |
+|       +----------------------------------------|
+|       | ClusterClient                          |
+|       |      +---------------------------------|
+|       |      | RegistryClient                  |
++------------------------------------------------+</code></pre><ul><li>RegistryClient - responsible for communicating with remote service, to access data, supports for asynchronous APIs only, and does&#x27;t care about multi-process model.</li><li>ClusterClient - a client instance that is simply wrapped by the cluster-client module and is responsible for automatically flushing differences in multi-process model.</li><li>APIClient - internally calls ClusterClient to synchronize data, without the need to concern about multi-process model and is the final exposed module for users. APIs are exposed Through this, and support for synchronization and asynchronization.</li></ul><p>Students who are interested may have look at <a href="https://github.com/eggjs/egg/issues/322">enhanced multi-process development model</a> discussion process.</p><h2 id="the-configuration-items-related-to-cluster-client-in-the-framework">the configuration items related to cluster-client in the framework</h2><pre><code class="language-js">/**
+ * @property {Number} responseTimeout - response timeout, default is 60000
+ * @property {Transcode} [transcode]
+ *   - {Function} encode - custom serialize method
+ *   - {Function} decode - custom deserialize method
+ */
+config.clusterClient = {
+  responseTimeout: 60000,
+};</code></pre><table><thead><tr><th>Configuration Items</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td>responseTimeout</td><td>number</td><td>60000 (one minute)</td><td>Global interprocess communication timeout, you cannot set too short, because the proxy interface itself has a timeout setting</td></tr><tr><td>transcode</td><td>function</td><td>N/A</td><td>Serialization of interprocess communication, by default <a href="https://www.npmjs.com/package/serialize-json">serialize-json</a> (set up manually is not recommended)</td></tr></tbody></table><p>The above is about global configuration. If you want to do a separate setting for a client:</p><ul><li>You can override by setting the second argument <code>options</code> in<code>app/agent.cluster(ClientClass, options)</code></li></ul><pre><code class="language-js">app.registryClient = app.cluster(RegistryClient, {
+  responseTimeout: 120 * 1000, // the parameters passing here are related to cluster-client
+}).create({
+  // here are parameters required by RegistryClient
+});</code></pre><ul><li>You can also override the <code>getter</code> attribute of <code>clusterOptions</code> in <code>APIClientBase</code>.</li></ul><pre><code class="language-js">const APIClientBase = require(&#x27;cluster-client&#x27;).APIClientBase;
+const RegistryClient = require(&#x27;./registry_client&#x27;);
+
+class APIClient extends APIClientBase {
+  get DataClient() {
+    return RegistryClient;
+  }
+
+  get clusterOptions() {
+    return {
+      responseTimeout: 120 * 1000,
+    };
+  }
+
+  // ...
+}
+
+module.exports = APIClient;</code></pre></div></div></div><div style="padding-left:8px;padding-right:8px" class="ant-col-xs-0 ant-col-md-6"><div class="markdown-body" style="font-size:14px"><div><ul><li><a href="#core-idea">core idea</a></li><li><a href="#client-interface-type-abstraction">Client interface type abstraction</a></li><li><a href="#exception-handling">exception handling</a></li><li><a href="#protocol-and-time-series-to-invoke">protocol and time series to invoke</a></li><li><a href="#specific-use">specific use</a></li><li><a href="#the-configuration-items-related-to-cluster-client-in-the-framework">the configuration items related to cluster-client in the framework</a></li></ul></div></div></div></div></div></div></div></div></div><script type="text/javascript">window.__INIT_STATE__={"lang":"en","props":{"toc":"-%20%5Bcore%20idea%5D(%23core-idea)%0A-%20%5BClient%20interface%20type%20abstraction%5D(%23client-interface-type-abstraction)%0A-%20%5Bexception%20handling%5D(%23exception-handling)%0A-%20%5Bprotocol%20and%20time%20series%20to%20invoke%5D(%23protocol-and-time-series-to-invoke)%0A-%20%5Bspecific%20use%5D(%23specific-use)%0A-%20%5Bthe%20configuration%20items%20related%20to%20cluster-client%20in%20the%20framework%5D(%23the-configuration-items-related-to-cluster-client-in-the-framework)","meta":{"info":{"title":"Multi-Process Development Model Enhancement"}},"content":"%0A%0A%0AIn%20the%20previous%20%5BMulti-Process%20Model%20chapter%5D(..%2Fcore%2Fcluster-and-ipc.md)%2C%20we%20covered%20the%20multi-process%20model%20of%20the%20framework%20in%20detail%2C%20whose%20Agent%20process%20suits%20for%20a%20common%20class%20of%20scenarios%3A%20some%20middleware%20clients%20need%20to%20establish%20a%20persistent%20connection%20with%20server.%20In%20theory%2C%20a%20server%20had%20better%20establish%20only%20one%20persistent%20connection.%20However%2C%20the%20multi-process%20model%20will%20result%20in%20n%20times%20(n%20%3D%20number%20of%20Worker%20processes)%20connections%20being%20created.%0A%0A%60%60%60bash%0A%2B--------%2B%20%20%20%2B--------%2B%0A%7C%20Client%20%7C%20%20%20%7C%20Client%20%7C%20%20%20...%20n%0A%2B--------%2B%20%20%20%2B--------%2B%0A%20%20%20%20%7C%20%20%5C%20%20%20%20%20%2F%20%20%20%7C%0A%20%20%20%20%7C%20%20%20%20%5C%20%2F%20%20%20%20%20%7C%20%20%20%20%20%20%20%20n%20*%20m%20links%0A%20%20%20%20%7C%20%20%20%20%2F%20%5C%20%20%20%20%20%7C%0A%20%20%20%20%7C%20%20%2F%20%20%20%20%20%5C%20%20%20%7C%0A%2B--------%2B%20%20%20%2B--------%2B%0A%7C%20Server%20%7C%20%20%20%7C%20Server%20%7C%20%20%20...%20m%0A%2B--------%2B%20%20%20%2B--------%2B%0A%60%60%60%0A%0AIn%20order%20to%20reuse%20persistent%20connections%20as%20much%20as%20possible%20(because%20they%20are%20very%20valuable%20resources%20for%20server)%2C%20we%20put%20it%20into%20the%20Agent%20process%20to%20maintain%2C%20and%20then%20we%20transmit%20data%20to%20each%20Worker%20via%20messenger.%20It's%20feasible%20but%20often%20we%20need%20to%20write%20a%20lot%20of%20code%20to%20encapsulate%20the%20interface%20and%20to%20realize%20data%20transmission%2C%20which%20is%20very%20troublesome.%0A%0AIn%20addition%2C%20it's%20relatively%20inefficient%20to%20transmit%20data%20via%20messenger%2C%20since%20messenger%20will%20do%20the%20transmission%20through%20the%20Master%3B%20In%20case%20IPC%20channel%20goes%20wrong%2C%20it%20would%20probably%20break%20Master%20process%20down.%0A%0AThen%20is%20there%20any%20better%20way%3F%20The%20answer%20is%20yes.%20We%20provide%20a%20new%20type%20of%20model%20to%20reduce%20the%20complexity%20of%20this%20type%20of%20client%20encapsulation.%20The%20new%20Model%20bypasses%20the%20Master%20by%20establishing%20a%20direct%20socket%20between%20Agent%20and%20Worker.%20And%20as%20an%20external%20interface%2C%20Agent%20maintains%20shared%20connection%20among%20multiple%20Worker%20processes.%0A%0A%23%23%20core%20idea%0A%0A-%20Inspired%20by%20the%20%5BLeader%2FFollower%5D(http%3A%2F%2Fwww.cs.wustl.edu%2F~schmidt%2FPDF%2Flf.pdf)%20model%0A-%20The%20client%20is%20divided%20into%20two%20roles%3A%0A%C2%A0%C2%A0-%20Leader%3A%20responsible%20for%20maintaining%20the%20connection%20with%20the%20remote%20server%2C%20only%20one%20Leader%20for%20the%20same%20type%20of%20client.%0A%C2%A0%C2%A0-%20Follower%3A%20delegates%20specific%20operations%20to%20the%20Leader.%20A%20common%20way%20is%20Subscribe-Model%20(let%20the%20Leader%20interact%20with%20remote%20server%20and%20wait%20for%20its%20return).%0A-%20How%20to%20determine%20who%20Leader%20is%2C%20who%20Follower%20is%3F%20There%20are%20two%20modes%3A%0A%C2%A0%C2%A0-%20Free%20competition%20mode%3A%20clients%20determine%20the%20Leader%20by%20the%20competition%20of%20the%20local%20port%20when%20start%20up.%20For%20example%3A%20every%20one%20tries%20to%20monitor%20port%207777%2C%20and%20finally%20the%20only%20one%20instance%20who%20seizes%20it%20will%20become%20Leader%2C%20the%20rest%20will%20be%20Followers.%0A%C2%A0%C2%A0-%20Mandatory%20mode%3A%20the%20framework%20designates%20a%20Leader%20and%20the%20rest%20are%20Followers.%0A-%20we%20use%20mandatory%20mode%20inside%20the%20framework.%20The%20Leader%20can%20only%20be%20created%20inside%20the%20Agent%2C%20which%20is%20also%20in%20line%20with%20our%20positioning%20of%20the%20Agent.%0A-%20When%20the%20framework%20starts%20up%2C%20Master%20will%20randomly%20select%20an%20available%20port%20as%20the%20communication%20port%20monitored%20by%20the%20Cluster%20Client%2C%20and%20passes%20it%20by%20parameter%20to%20Agent%20and%20App%20Worker.%0A-%20Leader%20communicates%20with%20Follower%20through%20direct%20socket%20connection%20(through%20communication%20port)%2C%20no%20longer%20needs%20Master%20to%20transit.%0A%0AUnder%20the%20new%20mode%2C%20the%20client's%20communication%20is%20as%20follows%3A%0A%0A%60%60%60js%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%2B-------%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20start%20%7C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%2B---%2B---%2B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%20%20%2B--------%2B---------%2B%0A%20%20%20%20%20%20__%7C%20port%20competition%20%7C__%0Awin%20%2F%20%20%20%2B------------------%2B%20%20%5C%20lose%0A%20%20%20%2F%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%5C%0A%2B---------------%2B%20%20%20%20%20tcp%20conn%20%20%20%20%20%2B-------------------%2B%0A%7C%20Leader(Agent)%20%7C%3C----------------%3E%7C%20Follower(Worker1)%20%7C%0A%2B---------------%2B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2B-------------------%2B%0A%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%5C%20tcp%20conn%0A%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%5C%0A%2B--------%2B%20%20%20%20%20%20%20%20%20%2B-------------------%2B%0A%7C%20Client%20%7C%20%20%20%20%20%20%20%20%20%7C%20Follower(Worker2)%20%7C%0A%2B--------%2B%20%20%20%20%20%20%20%20%20%2B-------------------%2B%0A%60%60%60%0A%0A%23%23%20Client%20interface%20type%20abstraction%0A%0AWe%20abstract%20the%20client%20interface%20into%20the%20following%20two%20broad%20categories%2C%20which%20is%20also%20a%20specification%20of%20the%20client%20interface.%20For%20clients%20that%20are%20in%20line%20with%20norms%2C%20we%20can%20automatically%20wrap%20it%20as%20Leader%20%2F%20Follower%20mode.%0A%0A-%20Subscribe%20%2F%20Publish%20Mode%0A%C2%A0%C2%A0-%20The%20%60subscribe(info%2C%20listener)%60%20interface%20contains%20two%20parameters.%20The%20first%20one%20is%20the%20information%20subscribed%20and%20the%20second%20one%20is%20callback%20function%20for%20subscribe.%0A%C2%A0%C2%A0-%20The%20%60publish(info)%60%20interface%20contains%20a%20parameter%20which%20is%20the%20information%20subscribed.%0A-%20Invoke%20Mode%2C%20supports%20three%20styles%20of%20interface%3A%20callback%2C%20promise%20and%20generator%20function%2C%20but%20generator%20function%20is%20recommended.%0A%0AClient%20example%0A%0A%60%60%60js%0Aconst%20Base%20%3D%20require('sdk-base')%3B%0A%0Aclass%20Client%20extends%20Base%20%7B%0A%C2%A0%C2%A0constructor(options)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0super(options)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%2F%2F%20remember%20to%20invoke%20ready%20after%20initialization%20is%20successful%0A%C2%A0%C2%A0%C2%A0%C2%A0this.ready(true)%3B%0A%C2%A0%C2%A0%7D%0A%0A%C2%A0%C2%A0%2F**%0A%C2%A0%C2%A0%C2%A0*%20Subscribe%0A%C2%A0%C2%A0%C2%A0*%0A%C2%A0%C2%A0%C2%A0*%20%40param%20%7BObject%7D%20info%20-%20subscription%20information%20(a%20JSON%20object%2C%20try%20not%20to%20include%20attributes%20such%20as%20Function%2C%20Buffer%2C%20Date)%0A%C2%A0%C2%A0%C2%A0*%20%40param%20%7BFunction%7D%20listener%20-%20monitoring%20callback%20function%2C%20receives%20a%20parameter%20as%20the%20result%20of%20monitoring%0A%C2%A0%C2%A0%C2%A0*%2F%0A%C2%A0%C2%A0subscribe(info%2C%20listener)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%2F%2F%20...%0A%C2%A0%C2%A0%7D%0A%0A%C2%A0%C2%A0%2F**%0A%C2%A0%C2%A0%C2%A0*%20Publish%0A%C2%A0%C2%A0%C2%A0*%0A%C2%A0%C2%A0%C2%A0*%20%40param%20%7BObject%7D%20info%20-%20publishing%20information%2C%20which%20is%20similar%20to%20that%20of%20subscribe%20described%20above%0A%C2%A0%C2%A0%C2%A0*%2F%0A%C2%A0%C2%A0publish(info)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%2F%2F%20...%0A%C2%A0%C2%A0%7D%0A%0A%C2%A0%C2%A0%2F**%0A%C2%A0%C2%A0%C2%A0*%20Get%20data%20(invoke)%0A%C2%A0%C2%A0%C2%A0*%0A%C2%A0%C2%A0%C2%A0*%20%40param%20%7BString%7D%20id%20-%20id%0A%C2%A0%C2%A0%C2%A0*%20%40return%20%7BObject%7D%20result%0A%C2%A0%C2%A0%C2%A0*%2F%0A%C2%A0%C2%A0async%20getData(id)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%2F%2F%20...%0A%C2%A0%C2%A0%7D%0A%7D%0A%60%60%60%0A%0A%23%23%20exception%20handling%0A%0A-%20If%20Leader%20%22dies%22%2C%20a%20new%20round%20of%20port%20contention%20will%20be%20triggered.%20The%20instance%20which%20seizes%20the%20port%20will%20be%20elected%20as%20the%20new%20Leader.%0A-%20To%20ensure%20that%20the%20channel%20between%20Leader%20and%20Follower%20is%20healthy%2C%20heartbeat%20mechanism%20needs%20to%20be%20introduced.%20If%20the%20Follower%20does%20not%20send%20a%20heartbeat%20packet%20within%20a%20fixed%20time%2C%20the%20Leader%20will%20proactively%20disconnect%20from%20the%20Follower%2C%20which%20will%20trigger%20the%20reinitialization%20of%20Follower.%0A%0A%23%23%20protocol%20and%20time%20series%20to%20invoke%0A%0ALeader%20and%20Follower%20exchange%20data%20via%20the%20following%20protocols%3A%0A%0A%60%60%60js%0A%200%20%20%20%20%20%20%201%20%20%20%20%20%20%202%20%20%20%20%20%20%20%20%20%20%20%20%20%20%204%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2012%0A%20%2B-------%2B-------%2B---------------%2B---------------------------------------------------------------%2B%0A%20%7Cversion%7Creq%2Fres%7C%20%20%20%20reserved%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20request%20id%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%2B-------------------------------%2B-------------------------------%2B-------------------------------%2B%0A%20%7C%20%20%20%20%20%20%20%20%20%20%20timeout%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20%20%20connection%20object%20length%20%20%20%20%7C%20%20%20application%20object%20length%20%20%20%7C%0A%20%2B-------------------------------%2B---------------------------------------------------------------%2B%0A%20%7C%20%20%20%20%20%20%20%20%20conn%20object%20(JSON%20format)%20%20...%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20app%20object%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%2B-----------------------------------------------------------%2B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20...%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%2B-----------------------------------------------------------------------------------------------%2B%0A%60%60%60%0A%0A1.%20On%20the%20communication%20port%20Leader%20starts%20a%20Local%20Server%2C%20via%20which%20all%20Leaders%20%2F%20Followers%20communicate.%0A2.%20After%20Follower%20connects%20Local%20Server%2C%20it%20will%20firstly%20send%20a%20register%20channel%20packet%20(introduction%20of%20the%20channel%20concept%20is%20to%20distinguish%20between%20different%20types%20of%20clients)%0A3.%20Local%20Server%20will%20assign%20Follower%20to%20a%20specified%20Leader%20(match%20based%20on%20client%20type).%0A4.%20Follower%20sends%20requests%20to%20Leader%20to%20subscribe%20and%20publish.%0A5.%20Leader%20notifies%20Follower%20through%20the%20subscribe%20result%20packet%20when%20the%20subscription%20data%20changes.%0A6.%20Follower%20sends%20a%20call%20request%20to%20the%20Leader.%20The%20Leader%20executes%20a%20corresponding%20operation%20after%20receiving%2C%20and%20returns%20the%20result.%0A%0A%60%60%60js%0A%20%2B----------%2B%20%20%20%20%20%20%20%20%20%20%20%20%20%2B---------------%2B%20%20%20%20%20%20%20%20%20%20%2B---------%2B%0A%20%7C%20Follower%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20%20Local%20Server%20%7C%20%20%20%20%20%20%20%20%20%20%7C%20%20Leader%20%7C%0A%20%2B----------%2B%20%20%20%20%20%20%20%20%20%20%20%20%20%2B---------------%2B%20%20%20%20%20%20%20%20%20%20%2B---------%2B%0A%20%20%20%20%20%20%7C%20%20%20%20%20register%20channel%20%20%20%20%20%7C%20%20%20%20%20%20%20assign%20to%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%2B%20-----------------------%3E%20%7C%20%20--------------------%3E%20%7C%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20subscribe%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%2B%20------------------------------------------------%3E%20%7C%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20publish%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%2B%20------------------------------------------------%3E%20%7C%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20subscribe%20result%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20%3C------------------------------------------------%20%2B%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20invoke%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%2B%20------------------------------------------------%3E%20%7C%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20invoke%20result%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%20%20%20%20%20%20%7C%20%3C------------------------------------------------%20%2B%0A%20%20%20%20%20%20%7C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%60%60%60%0A%0A%23%23%20specific%20use%0A%0AIn%20the%20following%20I%20will%20use%20a%20simple%20example%20to%20introduce%20how%20to%20make%20a%20client%20support%20Leader%20%2F%20Follower%20mode%20in%20the%20framework.%0A%0A-%20The%20first%20step%2C%20our%20client%20is%20best%20to%20meet%20the%20interface%20conventions%20mentioned%20above%2C%20for%20example%3A%0A%0A%60%60%60js%0A%2F%2F%20registry_client.js%0Aconst%20URL%20%3D%20require('url')%3B%0Aconst%20Base%20%3D%20require('sdk-base')%3B%0A%0Aclass%20RegistryClient%20extends%20Base%20%7B%0A%C2%A0%C2%A0constructor(options)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0super(%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%2F%2F%20Specify%20a%20method%20for%20asynchronous%20start%20%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0initMethod%3A%20'init'%2C%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0this._options%20%3D%20options%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0this._registered%20%3D%20new%20Map()%3B%0A%C2%A0%C2%A0%7D%0A%0A%C2%A0%C2%A0%2F**%0A%C2%A0%C2%A0%C2%A0*%20Start%20logic%0A%C2%A0%C2%A0%C2%A0*%2F%0A%C2%A0%C2%A0async%20init()%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0this.ready(true)%3B%0A%C2%A0%C2%A0%7D%0A%0A%C2%A0%C2%A0%2F**%0A%C2%A0%C2%A0%C2%A0*%20Get%20configuration%0A%C2%A0%C2%A0%C2%A0*%20%40param%20%7BString%7D%20dataId%20-%20the%20dataId%0A%C2%A0%C2%A0%C2%A0*%20%40return%20%7BObject%7D%20configuration%0A%C2%A0%C2%A0%C2%A0*%2F%0A%C2%A0%C2%A0async%20getConfig(dataId)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0return%20this._registered.get(dataId)%3B%0A%C2%A0%C2%A0%7D%0A%0A%C2%A0%C2%A0%2F**%0A%C2%A0%C2%A0%C2%A0*%20Subscribe%0A%C2%A0%C2%A0%C2%A0*%20%40param%20%7BObject%7D%20reg%0A%C2%A0%C2%A0%C2%A0*%20%20%20-%20%7BString%7D%20dataId%20-%20the%20dataId%0A%C2%A0%C2%A0%C2%A0*%20%40param%20%7BFunction%7D%20listener%20-%20the%20listener%0A%C2%A0%C2%A0%C2%A0*%2F%0A%C2%A0%C2%A0subscribe(reg%2C%20listener)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0const%20key%20%3D%20reg.dataId%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0this.on(key%2C%20listener)%3B%0A%0A%C2%A0%C2%A0%C2%A0%C2%A0const%20data%20%3D%20this._registered.get(key)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0if%20(data)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0process.nextTick(()%20%3D%3E%20listener(data))%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%7D%0A%0A%C2%A0%C2%A0%2F**%0A%C2%A0%C2%A0%C2%A0*%20publish%0A%C2%A0%C2%A0%C2%A0*%20%40param%20%7BObject%7D%20reg%0A%C2%A0%C2%A0%C2%A0*%20%20%20-%20%7BString%7D%20dataId%20-%20the%20dataId%0A%C2%A0%C2%A0%C2%A0*%20%20%20-%20%7BString%7D%20publishData%20-%20the%20publish%20data%0A%C2%A0%C2%A0%C2%A0*%2F%0A%C2%A0%C2%A0publish(reg)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0const%20key%20%3D%20reg.dataId%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0let%20changed%20%3D%20false%3B%0A%0A%C2%A0%C2%A0%C2%A0%C2%A0if%20(this._registered.has(key))%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0const%20arr%20%3D%20this._registered.get(key)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0if%20(arr.indexOf(reg.publishData)%20%3D%3D%3D%20-1)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0changed%20%3D%20true%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0arr.push(reg.publishData)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%20else%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0changed%20%3D%20true%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0this._registered.set(key%2C%20%5Breg.publishData%5D)%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%C2%A0%C2%A0if%20(changed)%20%7B%0A%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0this.emit(key%2C%20this._registered.get(key).map(url%20%3D%3E%20URL.parse%20(url%2C%20true)))%3B%0A%C2%A0%C2%A0%C2%A0%C2%A0%7D%0A%C2%A0%C2%A0%7D%0A%7D%0A%0Amodule.exports%20%3D%20RegistryClient%3B%0A%60%60%60%0A%0A-%20The%20second%20step%20is%20to%20encapsulate%20the%20RegistryClient%20using%20the%20%60agent.cluster%60%20interface.%0A%0A%60%60%60js%0A%2F%2F%20agent.js%0Aconst%20RegistryClient%20%3D%20require('registry_client')%3B%0A%0Amodule.exports%20%3D%20agent%20%3D%3E%20%7B%0A%C2%A0%C2%A0%2F%2F%20encapsulate%20and%20instantiate%20RegistryClient%0A%20%20agent.registryClient%20%3D%20agent.cluster(RegistryClient)%0A%C2%A0%C2%A0%C2%A0%C2%A0%2F%2F%20parameter%20of%20create%20method%20is%20the%20parameter%20of%20RegistryClient%20constructor%0A%20%20%20%20.create(%7B%7D)%3B%0A%0A%20%20agent.beforeStart(async%20()%20%3D%3E%20%7B%0A%20%20%20%20await%20agent.registryClient.ready()%3B%0A%20%20%20%20agent.coreLogger.info('registry%20client%20is%20ready')%3B%0A%20%20%7D)%3B%0A%7D%3B%0A%60%60%60%0A%0A-%20The%20third%20step%2C%20use%20the%20%60app.cluster%60%20interface%20to%20encapsulate%20RegistryClient%0A%0A%60%60%60js%0A%2F%2F%20app.js%0Aconst%20RegistryClient%20%3D%20require('registry_client')%3B%0A%0Amodule.exports%20%3D%20app%20%3D%3E%20%7B%0A%20%20app.registryClient%20%3D%20app.cluster(RegistryClient).create(%7B%7D)%3B%0A%20%20app.beforeStart(async%20()%20%3D%3E%20%7B%0A%20%20%20%20await%20app.registryClient.ready()%3B%0A%20%20%20%20app.coreLogger.info('registry%20client%20is%20ready')%3B%0A%0A%20%20%20%20%2F%2F%20invoke%20subscribe%20to%20subscribe%0A%20%20%20%20app.registryClient.subscribe(%7B%0A%20%20%20%20%20%20dataId%3A%20'demo.DemoService'%2C%0A%20%20%20%20%7D%2C%20val%20%3D%3E%20%7B%0A%20%20%20%20%20%20%2F%2F%20...%0A%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%2F%2F%20invoke%20publish%20to%20publsih%20data%0A%20%20%20%20app.registryClient.publish(%7B%0A%20%20%20%20%20%20dataId%3A%20'demo.DemoService'%2C%0A%20%20%20%20%20%20publishData%3A%20'xxx'%2C%0A%20%20%20%20%7D)%3B%0A%0A%20%20%20%20%2F%2F%20invoke%20getConfig%20interface%0A%20%20%20%20const%20res%20%3D%20await%20app.registryClient.getConfig('demo.DemoService')%3B%0A%20%20%20%20console.log(res)%3B%0A%20%20%7D)%3B%0A%7D%3B%0A%60%60%60%0A%0AIs%20not%20it%20simple%3F%0A%0AOf%20course%2C%20if%20your%20client%20is%20not%20so%20%E3%80%8Estandard%E3%80%8F%2C%20then%20you%20may%20need%20to%20use%20some%20other%20APIs%2C%20for%20example%2C%20your%20subscription%20function%20is%20not%20called%20subscribe%2C%20but%20sub.%0A%0A%60%60%60js%0Aclass%20MockClient%20extends%20Base%20%7B%0A%20%20constructor(options)%20%7B%0A%20%20%20%20super(%7B%0A%20%20%20%20%20%20initMethod%3A%20'init'%2C%0A%20%20%20%20%7D)%3B%0A%20%20%20%20this._options%20%3D%20options%3B%0A%20%20%20%20this._registered%20%3D%20new%20Map()%3B%0A%20%20%7D%0A%0A%20%20async%20init()%20%7B%0A%20%20%20%20this.ready(true)%3B%0A%20%20%7D%0A%0A%20%20sub(info%2C%20listener)%20%7B%0A%20%20%20%20const%20key%20%3D%20reg.dataId%3B%0A%20%20%20%20this.on(key%2C%20listener)%3B%0A%0A%20%20%20%20const%20data%20%3D%20this._registered.get(key)%3B%0A%20%20%20%20if%20(data)%20%7B%0A%20%20%20%20%20%20process.nextTick(()%20%3D%3E%20listener(data))%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%0A%20%20...%0A%7D%0A%60%60%60%0A%0AYou%20need%20to%20set%20it%20manually%20with%20the%20delegate%20API%0A%0A%60%60%60js%0A%2F%2F%20agent.js%0Amodule.exports%20%3D%20agent%20%3D%3E%20%7B%0A%20%20agent.mockClient%20%3D%20agent.cluster(MockClient)%0A%20%20%20%20%2F%2F%20delegate%20sub%20to%20logic%20of%20subscribe%0A%20%20%20%20.delegate('sub'%2C%20'subscribe')%0A%20%20%20%20.create()%3B%0A%0A%20%20agent.beforeStart(async%20()%20%3D%3E%20%7B%0A%20%20%20%20await%20agent.mockClient.ready()%3B%0A%20%20%7D)%3B%0A%7D%3B%0A%60%60%60%0A%0A%60%60%60js%0A%2F%2F%20app.js%0Amodule.exports%20%3D%20app%20%3D%3E%20%7B%0A%20%20app.mockClient%20%3D%20app.cluster(MockClient)%0A%20%20%20%20%2F%2F%20delegate%20sub%20to%20subscribe%20logic%0A%20%20%20%20.delegate('sub'%2C%20'subscribe')%0A%20%20%20%20.create()%3B%0A%0A%20%20app.beforeStart(async%20()%20%3D%3E%20%7B%0A%20%20%20%20await%20app.mockClient.ready()%3B%0A%0A%20%20%20%20app.sub(%7B%20id%3A%20'test-id'%20%7D%2C%20val%20%3D%3E%20%7B%0A%20%20%20%20%20%20%2F%2F%20put%20your%20code%20here%0A%20%20%20%20%7D)%3B%0A%20%20%7D)%3B%0A%7D%3B%0A%60%60%60%0A%0AWe've%20already%20known%20that%20using%20cluster-client%20allows%20us%20to%20develop%20a%20%E3%80%8Epure%E3%80%8F%20RegistryClient%20without%20understanding%20the%20multi-process%20model.%20We%20can%20only%20focus%20on%20interacting%20with%20server%2C%20and%20use%20the%20cluster-client%20with%20a%20simple%20wrap%20to%20get%20a%20ClusterClient%20which%20supports%20multi-process%20model.%20The%20RegistryClient%20here%20is%20actually%20a%20DataClient%20that%20is%20specifically%20responsible%20for%20data%20communication%20with%20remote%20service.%0A%0AYou%20may%20have%20noticed%20that%20the%20ClusterClient%20brings%20with%20several%20constraints%20at%20the%20same%20time.%20If%20you%20want%20to%20expose%20the%20same%20approach%20to%20each%20process%2C%20RegistryClient%20can%20only%20support%20sub%2Fpub%20mode%20and%20asynchronous%20API%20calls.%20Because%20all%20interactions%20in%20multi-process%20model%20must%20use%20socket%20communications%2C%20under%20which%20it%20is%20bound%20to%20bring%20this%20constraint.%0A%0ASuppose%20we%20want%20to%20realize%20a%20synchronous%20get%20method.%20Put%20subscribed%20data%20directly%20into%20memory%20and%20use%20the%20get%20method%20to%20return%20data%20directly.%20How%20to%20achieve%20it%3F%20The%20real%20situation%20may%20be%20more%20complicated.%0A%0AHere%2C%20we%20introduce%20an%20APIClient%20best%20practice.%20For%20modules%20that%20have%20requirements%20of%20synchronous%20API%20such%20as%20reading%20cached%20data%2C%20an%20APIClient%20is%20encapsulated%20base%20on%20RegistryClient%20to%20implement%20these%20APIs%20that%20are%20not%20related%20to%20interaction%20with%20the%20remote%20server.%20The%20APIClient%20instance%20is%20exposed%20to%20the%20user.%0A%0AIn%20APIClient%20internal%20implementation%3A%0A%0A-%20To%20obtain%20data%20asynchronously%2C%20invoke%20RegistryClient's%20API%20base%20on%20ClusterClient.%0A-%20Interfaces%20that%20are%20unrelated%20to%20server%2C%20such%20as%20synchronous%20call%2C%20are%20to%20be%20implemented%20in%20APIClient.%20Since%20ClusterClient's%20APIs%20have%20flushed%20multi-process%20differences%2C%20there%20is%20no%20need%20to%20concern%20about%20multi-process%20model%20when%20calls%20to%20RegistryClient%20during%20developing%20APIClient.%0A%0AFor%20example%2C%20add%20a%20synchronous%20get%20method%20with%20buffer%20in%20the%20APIClient%20module%3A%0A%0A%60%60%60js%0A%2F%2F%20some-client%2Findex.js%0Aconst%20cluster%20%3D%20require('cluster-client')%3B%0Aconst%20RegistryClient%20%3D%20require('.%2Fregistry_client')%3B%0A%0Aclass%20APIClient%20extends%20Base%20%7B%0A%20%20constructor(options)%20%7B%0A%20%20%20%20super(options)%3B%0A%0A%C2%A0%C2%A0%C2%A0%C2%A0%2F%2F%20options.cluster%20is%20used%20to%20pass%20app.cluster%20to%20Egg's%20plugin%0A%20%20%20%20this._client%20%3D%20(options.cluster%20%7C%7C%20cluster)(RegistryClient).create(options)%3B%0A%20%20%20%20this._client.ready(()%20%3D%3E%20this.ready(true))%3B%0A%0A%20%20%20%20this._cache%20%3D%20%7B%7D%3B%0A%0A%20%20%20%20%2F%2F%20subMap%3A%0A%20%20%20%20%2F%2F%20%7B%0A%20%20%20%20%2F%2F%20%20%20foo%3A%20reg1%2C%0A%20%20%20%20%2F%2F%20%20%20bar%3A%20reg2%2C%0A%20%20%20%20%2F%2F%20%7D%0A%20%20%20%20const%20subMap%20%3D%20options.subMap%3B%0A%0A%20%20%20%20for%20(const%20key%20in%20subMap)%20%7B%0A%20%20%20%20%20%20this.subscribe(subMap%5Bkey%5D%2C%20value%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20this._cache%5Bkey%5D%20%3D%20value%3B%0A%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%7D%0A%20%20%7D%0A%0A%20%20subscribe(reg%2C%20listener)%20%7B%0A%20%20%20%20this._client.subscribe(reg%2C%20listener)%3B%0A%20%20%7D%0A%0A%20%20publish(reg)%20%7B%0A%20%20%20%20this._client.publish(reg)%3B%0A%20%20%7D%0A%0A%20%20get(key)%20%7B%0A%20%20%20%20return%20this._cache%5Bkey%5D%3B%0A%20%20%7D%0A%7D%0A%0A%2F%2F%20at%20last%20the%20module%20exposes%20this%20APIClient%0Amodule.exports%20%3D%20APIClient%3B%0A%60%60%60%0A%0AThen%20we%20can%20use%20this%20module%20like%20this%3A%0A%0A%60%60%60js%0A%2F%2F%20app.js%20%7C%7C%20agent.js%0Aconst%20APIClient%20%3D%20require('some-client')%3B%20%2F%2F%20the%20module%20above%0Amodule.exports%20%3D%20app%20%3D%3E%20%7B%0A%20%20const%20config%20%3D%20app.config.apiClient%3B%0A%20%20app.apiClient%20%3D%20new%20APIClient(Object.assign(%7B%7D%2C%20config%2C%20%7B%20cluster%3A%20app.cluster%20%7D)%3B%0A%20%20app.beforeStart(async%20()%20%3D%3E%20%7B%0A%20%20%20%20await%20app.apiClient.ready()%3B%0A%20%20%7D)%3B%0A%7D%3B%0A%0A%2F%2F%20config.%24%7Benv%7D.js%0Aexports.apiClient%20%3D%20%7B%0A%20%20subMap%3A%20%7B%0A%20%20%20%20foo%3A%20%7B%0A%20%20%20%20%20%20id%3A%20''%2C%0A%20%20%20%20%7D%2C%0A%20%20%20%20%2F%2F%20bar...%0A%20%20%7D%0A%7D%3B%0A%60%60%60%0A%0ATo%20make%20it%20easy%20for%20you%20to%20encapsulate%20%60APIClient%60%2C%20we%20provide%20an%60%20APIClientBase%60%20base%20class%20in%20the%20%5Bcluster-client%5D(https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fcluster-client)%20module.%20Then%20%60APIClient%60%20above%20can%20be%20rewritten%20as%3A%0A%0A%60%60%60js%0Aconst%20APIClientBase%20%3D%20require('cluster-client').APIClientBase%3B%0Aconst%20RegistryClient%20%3D%20require('.%2Fregistry_client')%3B%0A%0Aclass%20APIClient%20extends%20APIClientBase%20%7B%0A%C2%A0%C2%A0%2F%2F%20return%20the%20original%20client%20class%0A%20%20get%20DataClient()%20%7B%0A%20%20%20%20return%20RegistryClient%3B%0A%20%20%7D%0A%0A%C2%A0%C2%A0%2F%2F%20used%20to%20set%20the%20cluster-client%20related%20parameters%2C%20equivalent%20to%20the%20second%20parameter%20of%20the%20cluster%20method%0A%20%20get%20clusterOptions()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20responseTimeout%3A%20120%20*%201000%2C%0A%20%20%20%20%7D%3B%0A%20%20%7D%0A%0A%20%20subscribe(reg%2C%20listener)%20%7B%0A%20%20%20%20this._client.subscribe(reg%2C%20listener)%3B%0A%20%20%7D%0A%0A%20%20publish(reg)%20%7B%0A%20%20%20%20this._client.publish(reg)%3B%0A%20%20%7D%0A%0A%20%20get(key)%20%7B%0A%20%20%20%20return%20this._cache%5Bkey%5D%3B%0A%20%20%7D%0A%7D%0A%60%60%60%0A%0Ain%20conclusion%3A%0A%0A%60%60%60bash%0A%2B------------------------------------------------%2B%0A%7C%20APIClient%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%7C%20%20%20%20%20%20%20%2B----------------------------------------%7C%0A%7C%20%20%20%20%20%20%20%7C%20ClusterClient%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%7C%20%20%20%20%20%20%20%7C%20%20%20%20%20%20%2B---------------------------------%7C%0A%7C%20%20%20%20%20%20%20%7C%20%20%20%20%20%20%7C%20RegistryClient%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%0A%2B------------------------------------------------%2B%0A%60%60%60%0A%0A-%20RegistryClient%20-%20responsible%20for%20communicating%20with%20remote%20service%2C%20to%20access%20data%2C%20supports%20for%20asynchronous%20APIs%20only%2C%20and%20does't%20care%20about%20multi-process%20model.%0A-%20ClusterClient%20-%20a%20client%20instance%20that%20is%20simply%20wrapped%20by%20the%20cluster-client%20module%20and%20is%20responsible%20for%20automatically%20flushing%20differences%20in%20multi-process%20model.%0A-%20APIClient%20-%20internally%20calls%20ClusterClient%20to%20synchronize%20data%2C%20without%20the%20need%20to%20concern%20about%20multi-process%20model%20and%20is%20the%20final%20exposed%20module%20for%20users.%20APIs%20are%20exposed%20Through%20this%2C%20and%20support%20for%20synchronization%20and%20asynchronization.%0A%0AStudents%20who%20are%20interested%20may%20have%20look%20at%20%5Benhanced%20multi-process%20development%20model%5D(https%3A%2F%2Fgithub.com%2Feggjs%2Fegg%2Fissues%2F322)%20discussion%20process.%0A%0A%23%23%20the%20configuration%20items%20related%20to%20cluster-client%20in%20the%20framework%20%0A%0A%60%60%60js%0A%2F**%0A%20*%20%40property%20%7BNumber%7D%20responseTimeout%20-%20response%20timeout%2C%20default%20is%2060000%0A%20*%20%40property%20%7BTranscode%7D%20%5Btranscode%5D%0A%20*%20%20%20-%20%7BFunction%7D%20encode%20-%20custom%20serialize%20method%0A%20*%20%20%20-%20%7BFunction%7D%20decode%20-%20custom%20deserialize%20method%0A%20*%2F%0Aconfig.clusterClient%20%3D%20%7B%0A%20%20responseTimeout%3A%2060000%2C%0A%7D%3B%0A%60%60%60%0A%0AConfiguration%20Items%20%20%20%20%7C%20Type%20%20%20%20%20%7C%20Default%20%20%20%20%20%20%20%20%20%7C%20Description%0A-----------------------%7C----------%7C-----------------%7C--------------------------------------------------------------------------%0AresponseTimeout%20%20%20%20%20%20%20%20%7C%20number%20%20%20%7C%2060000%20(one%20minute)%20%20%7C%20Global%20interprocess%20communication%20timeout%2C%20you%20cannot%20set%20too%20short%2C%20because%20the%20proxy%20interface%20itself%20has%20a%20timeout%20setting%0Atranscode%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20function%20%7C%20N%2FA%20%20%20%20%20%20%20%20%20%20%20%20%20%7C%20Serialization%20of%20interprocess%20communication%2C%20by%20default%20%5Bserialize-json%5D(https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fserialize-json)%20(set%20up%20manually%20is%20not%20recommended)%0A%0AThe%20above%20is%20about%20global%20configuration.%20If%20you%20want%20to%20do%20a%20separate%20setting%20for%20a%20client%3A%0A%0A-%20You%20can%20override%20by%20setting%20the%20second%20argument%20%60options%60%20in%60%20app%2Fagent.cluster(ClientClass%2C%20options)%20%60%0A%0A%60%60%60js%0Aapp.registryClient%20%3D%20app.cluster(RegistryClient%2C%20%7B%0A%20%20responseTimeout%3A%20120%20*%201000%2C%20%2F%2F%20the%20parameters%20passing%20here%20are%20related%20to%20cluster-client%0A%7D).create(%7B%0A%20%20%2F%2F%20here%20are%20parameters%20required%20by%20RegistryClient%0A%7D)%3B%0A%60%60%60%0A%0A-%20You%20can%20also%20override%20the%20%60getter%60%20attribute%20of%20%60clusterOptions%60%20in%20%60APIClientBase%60.%0A%0A%60%60%60js%0Aconst%20APIClientBase%20%3D%20require('cluster-client').APIClientBase%3B%0Aconst%20RegistryClient%20%3D%20require('.%2Fregistry_client')%3B%0A%0Aclass%20APIClient%20extends%20APIClientBase%20%7B%0A%20%20get%20DataClient()%20%7B%0A%20%20%20%20return%20RegistryClient%3B%0A%20%20%7D%0A%0A%20%20get%20clusterOptions()%20%7B%0A%20%20%20%20return%20%7B%0A%20%20%20%20%20%20responseTimeout%3A%20120%20*%201000%2C%0A%20%20%20%20%7D%3B%0A%20%20%7D%0A%0A%20%20%2F%2F%20...%0A%7D%0A%0Amodule.exports%20%3D%20APIClient%3B%0A%60%60%60"}}</script><script type="text/javascript" src="/static/js/post.b9faab88.js"></script></body></html>
